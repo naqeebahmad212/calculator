@@ -25,7 +25,7 @@ const Navbar = () => {
     closeMenu.current.classList.add("static");
     closeMenu.current.classList.remove("hidden");
     menuSheet.current.classList.add("left-0");
-    menuSheet.current.classList.remove("-left-[50%]");
+    menuSheet.current.classList.remove("-left-[300px]");
     siteTitle.current.classList.remove("text-white");
     siteTitle.current.classList.add("text-black");
     siteName.current.classList.add("text-black");
@@ -37,7 +37,7 @@ const Navbar = () => {
     closeMenu.current.classList.remove("static");
     closeMenu.current.classList.add("hidden");
     menuSheet.current.classList.remove("left-0");
-    menuSheet.current.classList.add("-left-[50%]");
+    menuSheet.current.classList.add("-left-[300px]");
     siteTitle.current.classList.add("text-white");
     siteTitle.current.classList.remove("text-black");
     siteName.current.classList.remove("text-black");
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             <div
               ref={menuSheet}
-              className="fixed items-baseline z-[9999] top-0 -left-[50%] h-screen w-[300px] bg-white transition-all duration-100 ease-in"
+              className="fixed items-baseline z-[9999] top-0 -left-[300px] h-screen w-[300px] bg-white transition-all duration-100 ease-in"
             >
               <ul className="flex absolute w-full top-24 flex-col justify-center p-10">
                 <li className="py-2 border-b w-full pl-3 hover:bg-gray-100 cursor-pointer hover:text-blue-500">
