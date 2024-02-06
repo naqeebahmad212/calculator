@@ -30,6 +30,7 @@ input[type="number"] {
 .contents-sec {
   position: -webkit-sticky;
   height: calc(130vh);
+  overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;
 }
