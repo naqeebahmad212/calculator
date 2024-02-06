@@ -26,10 +26,16 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.cards-container,
+.cards-container {
+  position: -webkit-sticky;
+  /* height: calc(130vh); */
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+}
+
 .contents-sec {
   position: -webkit-sticky;
-  height: calc(130vh);
+  height: calc(180vh);
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;

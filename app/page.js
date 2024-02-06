@@ -93,6 +93,7 @@ export default function Home() {
                   className={`cards-container mx-auto  top-[77px] sticky min-h-96 p-6 m-4`}
                   ref={cards}
 
+
                 >
                   <div className=" w-[100%] mx-auto flex flex-col justify-center items-center mb-[20px]">
                     <div className="card w-full lg:w-96 mb-4 shadow-2xl bg-base-100 ">
