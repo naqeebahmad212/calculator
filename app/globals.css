@@ -28,7 +28,8 @@ input[type="number"] {
 
 .cards-container {
   position: -webkit-sticky;
-  /* height: calc(130vh); */
+  height: calc(190vh);
+  overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;
 }
