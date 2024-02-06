@@ -35,8 +35,12 @@ input[type="number"] {
 
 .contents-sec {
   position: -webkit-sticky;
-  height: calc(180vh);
+  /* height: calc(180vh); */
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;
+}
+
+.cal-btn {
+  background-color: #0095b6;
 }
