@@ -24,8 +24,8 @@ const Navbar = () => {
     // menuSheet.current.style.transform = `translateX(50%)`;
     closeMenu.current.classList.add("static");
     closeMenu.current.classList.remove("hidden");
-    menuSheet.current.classList.add("left-0");
-    menuSheet.current.classList.remove("-left-[300px]");
+    menuSheet.current.classList.add("translate-x-[300px]");
+    menuSheet.current.classList.remove("translate-x-[-300px]");
     siteTitle.current.classList.remove("text-white");
     siteTitle.current.classList.add("text-black");
     siteName.current.classList.add("text-black");
@@ -36,8 +36,9 @@ const Navbar = () => {
   const hideMenuHandler = () => {
     closeMenu.current.classList.remove("static");
     closeMenu.current.classList.add("hidden");
-    menuSheet.current.classList.remove("left-0");
-    menuSheet.current.classList.add("-left-[300px]");
+
+    menuSheet.current.classList.remove("translate-x-[300px]");
+    menuSheet.current.classList.add("translate-x-[-300px]");
     siteTitle.current.classList.add("text-white");
     siteTitle.current.classList.remove("text-black");
     siteName.current.classList.remove("text-black");
@@ -57,9 +58,9 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   });
   return (
-    <div className="h-52">
+    <div className="h-16 lg:h-52">
       <header
-        className={` ${navbarClasses.join(" ")} ${scrollY < 10 ? "absolute top-[20px] bg-primary lg:bg-transparent" : "fixed top-0 bg-primary  lg:bg-white  border-b border-b-gray-300"}`}
+        className={` ${navbarClasses.join(" ")} ${scrollY < 10 ? "absolute top-0 lg:top-[20px] bg-primary lg:bg-transparent" : "fixed top-0 bg-primary  lg:bg-white  border-b border-b-gray-300 transition-all duration-250 ease-linear"}`}
       >
         <div className=" pt-0 lg:pt-5 flex justify-around lg:justify-between px-1">
           <div className="flex items-center gap-3 z-[999]  w-[100%] lg:w-[auto] justify-start">
@@ -72,7 +73,7 @@ const Navbar = () => {
 
             <div
               ref={menuSheet}
-              className="fixed items-baseline z-[9999] top-0 -left-[300px] h-screen w-[300px] bg-white transition-all duration-100 ease-in"
+              className="fixed items-baseline z-[9999] top-0 -left-[300px]  h-screen  w-[300px] bg-white transition duration-300 ease-in"
             >
               <ul className="flex absolute w-full top-24 flex-col justify-center p-10">
                 <li className="py-2 border-b w-full pl-3 hover:bg-gray-100 cursor-pointer hover:text-blue-500">
@@ -107,7 +108,7 @@ const Navbar = () => {
             <span
               onClick={() => hideMenuHandler()}
               ref={closeMenu}
-              className="close-menut h-[1100px] w-[97.5vw] bg-black bg-opacity-[.5] absolute hidden"
+              className="close-menut w-[97.5vw] h-[190vh] bg-black bg-opacity-[.5] absolute hidden transition-all duration-300 ease-in "
             ></span>
             <div className="flex gap-2 items-center z-[99999]">
               <h2

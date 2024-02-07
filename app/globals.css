@@ -14,6 +14,10 @@
   }
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -44,4 +48,8 @@ input[type="number"] {
 
 .cal-btn {
   background-color: #0095b6;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }
