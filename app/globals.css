@@ -32,7 +32,6 @@ input[type="number"] {
 
 .cards-container {
   position: -webkit-sticky;
-  height: calc(190vh);
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;
@@ -40,7 +39,6 @@ input[type="number"] {
 
 .contents-sec {
   position: -webkit-sticky;
-  /* height: calc(180vh); */
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-scrollbar-width: none;

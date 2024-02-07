@@ -93,7 +93,7 @@ const AboutOmni = () => {
         </div>
         <div className="pt-10 flex gap-4 justify-center">
           <div className="">
-            <ul className="w-[80%]">
+            <ul className="w-[80%] mx-auto">
               <li className="py-4 cursor-pointer text-primary font-semibold">
                 About Omni Calculator
               </li>
@@ -113,7 +113,7 @@ const AboutOmni = () => {
           </div>
 
           <div>
-            <ul className="w-[80%]">
+            <ul className="w-[80%] mx-auto">
               <li className="py-4 cursor-pointer text-primary font-semibold">
                 About Omni Calculator
               </li>
