@@ -11,11 +11,17 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <HeroSecton />
+      <section className="sec-1">
+        <HeroSecton />
+      </section>
 
-      <PeopeleAlsoViewed />
+      <section className="sec-2">
+        <PeopeleAlsoViewed />
+      </section>
 
-      <AboutOmni />
+      <section className="sec-3">
+        <AboutOmni />
+      </section>
     </main>
   );
 }

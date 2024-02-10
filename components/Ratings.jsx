@@ -22,8 +22,7 @@ const Ratings = () => {
         <span className="p-3">
           <StyledRating
             name="customized-color"
-            // value={rating !== undefined && rating}
-            defaultValue={rating}
+            defaultValue={Number(rating)}
             getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
             precision={0.5}
             icon={<FavoriteIcon fontSize="inherit" />}

@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 991px) {
   #image-container {
-    background-image: url("");
+    background-image: none;
   }
 }
 

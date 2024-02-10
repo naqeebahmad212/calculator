@@ -19,18 +19,18 @@ const AboutOmni = () => {
             >
               <g
                 fill="#4ebee1"
-                fill-rule="nonzero"
+                fillRule="nonzero"
                 stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
+                strokeWidth="1"
+                strokeLinecap="butt"
+                strokeLinejoin="miter"
+                strokeMiterlimit="10"
+                strokeDasharray=""
+                strokeDashoffset="0"
+                fontFamily="none"
+                fontWeight="none"
+                fontSize="none"
+                textAnchor="none"
                 // style="mix-blend-mode: normal"
               >
                 <g transform="scale(5.12,5.12)">
@@ -69,9 +69,9 @@ const AboutOmni = () => {
                 y2="42.171"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#ea504d"></stop>
-                <stop offset=".736" stop-color="#e83e3b"></stop>
-                <stop offset="1" stop-color="#e73634"></stop>
+                <stop offset="0" stopColor="#ea504d"></stop>
+                <stop offset=".736" stopColor="#e83e3b"></stop>
+                <stop offset="1" stopColor="#e73634"></stop>
               </linearGradient>
               <path
                 fill="url(#2Kwn75UM7U5wuXsmTmjBBa_6zadLh4Adjrp_gr1)"

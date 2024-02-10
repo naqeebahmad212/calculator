@@ -1,10 +1,6 @@
 "use client";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
 import { useState } from "react";
 import * as React from "react";
-import Box from "@mui/material/Box";
-
 import ChatIcon from "@mui/icons-material/Chat";
 import Link from "next/link";
 import Ratings from "./Ratings";
@@ -154,6 +150,7 @@ const HeroSecton = () => {
                               name=""
                               id=""
                               value={hrsNotWorkY.toFixed(2)}
+                              readOnly
                             />
                             hours{" "}
                           </div>
@@ -253,6 +250,7 @@ const HeroSecton = () => {
                               name=""
                               id=""
                               value={otherAnnualCots}
+                              readOnly
                             />
                             Rs{" "}
                           </div>
@@ -274,6 +272,7 @@ const HeroSecton = () => {
                               name=""
                               id=""
                               value={annualPayroll}
+                              readOnly
                             />
                             Rs{" "}
                           </div>
@@ -286,6 +285,7 @@ const HeroSecton = () => {
                               name=""
                               id=""
                               value={laborHrly.toFixed(2)}
+                              readOnly
                             />
                             Rs{" "}
                           </div>
@@ -320,6 +320,7 @@ const HeroSecton = () => {
                               name=""
                               id=""
                               value={laborPercentageInRevenu.toFixed(2)}
+                              readOnly
                             />
                             Rs{" "}
                           </div>
@@ -373,9 +374,9 @@ const HeroSecton = () => {
                 <p className="px-3 py-1 text-gray-400">
                   Last Updated at {new Date(Date.now()).toDateString()}
                 </p>
-                <div id="rating-component">
-                  <Ratings />
-                </div>
+
+                {/* rating component */}
+                <Ratings />
 
                 <div className="p-4">
                   <button className="text-primary btn btn-ghost border border-primary rounded-full min-h-[10px] h-[33px] p-0 px-5 py-0 hover:bg-transparent hover:border-gray-600 hover:text-gray-600 m-0 text-xs">
